@@ -1,6 +1,8 @@
 = Metanorma styling for NIST
 
-== Color palette
+== Input
+
+=== Color palette
 
 This color palette is generated from the two colors used by NIST:
 
@@ -25,3 +27,22 @@ This color palette is generated from the two colors used by NIST:
 
 image::Colors.png[]
 
+=== Existing design
+
+The NIST website is in shutdown so the actual documents can't be
+accessed right now, but here are some marked up cover pages
+that demonstrate how their pages look like.
+
+The resulting HTML should look professional like them.
+
+==== Cover page
+
+image::NIST.SP.800-126r3-cover-1.png[]
+
+==== Inner cover
+
+image::NIST.SP.800-126r3-cover-2.png[]
+
+==== Front end paper
+
+image::NIST.SP.800-126r3-inner.png[]
