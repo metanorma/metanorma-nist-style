@@ -69,13 +69,13 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Libre Baskerville', serif; }
 
 code, pre, tt, kbd, samp {
   font-family: "Space Mono", monospace; }
 
 h1, h2, h3, h4, h5, h6, .h2Annex {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Libre Baskerville', serif; }
 
 dl {
   display: grid;
@@ -118,11 +118,11 @@ body {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
-  color: #2c4457;
+  color: #141115;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  background-color: #f6f8fa; }
+  font-size: 14px;
+  line-height: 1.6;
+  background-color: #fff; }
 
 main {
   margin: 0 3em 0 6em; }
@@ -145,12 +145,12 @@ main {
     overflow: auto;
     padding: 0 0 0 45px;
     margin-right: 30px;
-    background-color: #f1f8ff; }
+    background-color: #ffffff; }
   #toggle {
     position: fixed;
     height: 100%;
     width: 30px;
-    background-color: #2c536e;
+    background-color: #006494;
     color: white !important;
     cursor: pointer;
     z-index: 100; }
@@ -190,7 +190,7 @@ main {
   font-size: 14px; }
 
 #toc a {
-  color: #2c536e;
+  color: #141115;
   text-decoration: none;
   display: block; }
 
@@ -207,8 +207,8 @@ main {
   color: white; }
 
 #toc .toc-active, #toc li:hover {
-  background: #2c536e;
-  box-shadow: inset -5px 0px 10px -5px #2c536e !important;
+  background: #006494;
+  box-shadow: inset -5px 0px 10px -5px #006494 !important;
   font-weight: 600; }
 
 #toc li:hover a {
@@ -232,6 +232,7 @@ main {
   /*box-shadow: -5px 0px 10px #1d1d1d*/ }
 
 .document-stage-band {
+  font-family: "Source Sans Pro", sans-serif;
   left: 0;
   top: 0;
   height: 100%;
@@ -241,10 +242,12 @@ main {
   box-shadow: -5px 0px 10px #1d1d1d; }
 
 .document-type {
+  font-family: "Source Sans Pro", sans-serif;
   position: relative;
   width: 25px; }
 
 .document-stage {
+  font-family: "Source Sans Pro", sans-serif;
   position: relative;
   width: 25px; }
 
@@ -303,7 +306,7 @@ p.document-stage {
 .coverpage-maturity, .coverpage-stage {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  font-size: 1.3em;
+  font-size: 1em;
   margin: 0 0 2em 0;
   text-transform: uppercase; }
 
@@ -337,6 +340,40 @@ p.document-stage {
 #obsolete-band {
   background-color: #7e0d13; }
 
+.logo-wrapper {
+  margin-left: 3em;
+}
+
+.logo-wrapper img {
+  display: block;
+  padding-bottom: 3em;
+}
+
+.logo-info {
+  margin-left: 3em;
+  margin-bottom: 1.5em;
+}
+
+.logo-info p{
+  margin: 0;
+}
+
+#NIST-logo {
+  width: 300px;
+}
+
+#commerce-logo {
+  width: 150px;
+}
+
+.authors-container {
+  margin-top: 2em;
+}
+
+.affiliation {
+  font-style: italic;
+}
+
 /*
     3. TYPOGRAPHY
 */
@@ -344,13 +381,12 @@ p.document-stage {
     3.1 Titles
 */
 h1, h2, h3, h4, h5, h6 {
-  color: #2c536e;
   font-weight: 400;
   margin-top: 1.6em;
   margin-bottom: 0.3em; }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 1.4em;
   text-transform: uppercase;
   margin-top: 2em; }
 
@@ -358,22 +394,20 @@ h1#content {
   margin-top: 2em; }
 
 h2 {
-  margin-top: 1.3em;
-  font-size: 1.7em;
+  margin-top: 1.7em;
+  font-size: 1.3em;
   font-weight: 300; }
 
 h3 {
-  margin-top: 1.3em;
-  font-size: 1.5em;
+  margin-top: 1.5em;
+  font-size: 1.2em;
   font-weight: 100; }
 
 h4 {
-  font-size: 1.4em;
+  font-size: 1em;
 }
 
 .TermNum, .Terms, .AltTerms {
-  color: #2c536e;
-  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300; }
 
 h2.TermNum {
@@ -388,7 +422,7 @@ p.AltTerms {
   /*
     font-style: italic;
      */
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 1em; }
 
 /*
@@ -396,26 +430,26 @@ p.AltTerms {
 */
 a, a:visited {
   text-decoration: none;
-  color: #2e81c2; }
+  color: #2677EA; }
 
 a:hover {
   color: white;
-  background: #2c536e;
-  box-shadow: 3px 0 0 #2c536e, -3px 0 0 #2c536e;
+  background: #2677EA;
+  box-shadow: 3px 0 0 #2677EA, -3px 0 0 #2677EA;
   /* padding: 2px 0 2px 0; */ }
 
 ::selection {
-  background: #2c536e;
+  background: #2677EA;
   /* WebKit/Blink Browsers */
   color: white; }
 
 ::-moz-selection {
-  background: #2c536e;
+  background: #2677EA;
   /* Gecko Browsers */
   color: white; }
 
 .contact-info a:hover {
-  color: #2e81c2;
+  color: #2677EA;
   text-decoration: underline;
   background: none;
   box-shadow: 0 0 0 0; }
@@ -457,8 +491,21 @@ ul li:first-child {
 .rule {
   width: 100%;
   height: 1px;
-  background-color: #2c536e;
+  background-color: #2677ea;
   margin: 2em 0; }
+
+.rule-2 {
+  width: 100%;
+  height: 1px;
+  background-color: #2677ea;
+}
+
+.rule-thick {
+  width: 100%;
+  height: 3px;
+  background-color: #2677ea;
+  margin-top: 3em;
+}
 
 /*
     3.5 Bibliograhy
@@ -488,8 +535,8 @@ p.Biblio, p.NormRef {
     3.7 Notes
 */
 .Note {
-  background-color: #fff8bb;
-  color: #7d760b;
+  background-color: #ffca3a;
+  color: #141115;
   padding: 1.2em;
   margin: 1em 0 1em 0; }
   .Note p {
@@ -515,7 +562,7 @@ p.Biblio, p.NormRef {
 table {
   border-collapse: collapse;
   width: 100%;
-  color: #2c536e;
+  color: #141115;
   font-weight: 300;
   margin: 1em 0 2em 0;
   margin-left: auto;
@@ -579,13 +626,13 @@ a.footnote-number {
   margin-top: 5em;
   width: 280px;
   text-align: left;
-  color: #2c536e !important;
+  color: #2677ea !important;
   background-color: #f1f8ff;
   border-radius: 25px; }
 
 .contact-info a,
 .contact-info a:hover {
-  color: #2c536e; }
+  color: #2677ea; }
 
 .contact-info p, .contact-info a {
   font-family: "Space Mono", monospace;
@@ -628,41 +675,58 @@ h2 p {
   color: #5ecf86; }
 
 .wrapper-top {
-  background: #447597;
-  color: #ffffff;
+  background: #fff;
+  color: #141115;
   padding: 7em 0;
-  width: 100%; }
+  margin-left: 3em;
+  }
 
-.wrapper-top-bottom {
-  width: 0;
-  height: 0;
-  border-top: 100px solid #2c536e ;
-  border-right: 100px solid transparent;
-  position: absolute; }
+
 
 .doc-number {
   font-size: 0.5em;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.6;
+  margin: 1.5em 0;}
 
 .coverpage-title {
-  padding-bottom: 0.5em;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 100;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-transform: uppercase; }
+
+  font-family: 'Libre Baskerville', serif; }
 
   .coverpage-title span {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 1.3em;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.1em;
     line-height: 1;
   }
+
+.scap {
+  font-style: italic;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.5em;
+}
+
+.download-info {
+  margin-top: 2em;
+}
+
+.category {
+  color: #2677ea;
+  margin-top: 4em;
+  margin-right: 2em;
+  padding: 0.7em 1em;
+  text-align: center;
+  border-top: solid 1px #2677ea;
+  border-bottom: solid 1px #2677ea;
+  text-transform: uppercase;
+}
+
 
 .WordSection11 {
   padding: 0 2em 0 3em; }
 
 .info-section {
-  padding: 0 2em 0 5em; }
+  padding: 0 }
 
 .prefatory-section {
   padding: 0 3em 0 6em; }
@@ -671,11 +735,11 @@ h2 p {
   display: none; }
 
 .coverpage {
-  text-align: center;
+  text-align: left;
   padding-left: 1.5em; }
 
 .coverpage-logo span, .coverpage-tc-name span {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Libre Baskerville', serif;
   text-transform: none;
   font-weight: 300; }
 
@@ -743,7 +807,7 @@ To top button
   font-size: 12px;
   border: none;
   outline: none;
-  background-color: #2c536e;
+  background-color: #2677ea;
   opacity: 0.15;
   color: white;
   cursor: pointer;
@@ -841,6 +905,7 @@ a.anchorjs-link:hover {
 
 <!--Font awesome import for the link icon-->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700,700i" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
 <style class="anchorjs"></style>
 </head>
@@ -863,17 +928,19 @@ a.anchorjs-link:hover {
   <div class="coverpage">
     <div class="wrapper-top">
 
+        <div class="rule-2"></div>
+
   <div class="coverpage-doc-identity">
     <div class="doc-number">
-      <span class="docnumber">05-020r26</span>
-      <span class="docnumber-separator">:</span>
-      <span class="docyear">2018 </span>
-    </div>
+      <div>NIST Special Publication 800-126</div>
+    <div>Revision 3</div>
+  </div>
 
     <div class="coverpage-title">
       <span class="title-first">Technical Committee Policies and Procedures</span>
       <!--<span class="title-second"></span>-->
     </div>
+    <div class="scap">SCAP Version 1.3</div>
   </div>
 
   <div class="coverpage-logo">
@@ -883,6 +950,49 @@ a.anchorjs-link:hover {
   <div class="coverpage-tc-name">
     <span>Technical Committee</span>
   </div>
+
+  <div class="rule-thick"></div>
+
+<div class="authors-container">
+  <div class="author">Author 1</div>
+  <div class="author">Author 2</div>
+  <div class="author">Author 3</div>
+  <div class="affiliation">Affiliation 1</div>
+</div>
+
+<div class="authors-container">
+  <div class="author">Author 4</div>
+  <div class="author">Author 5</div>
+  <div class="author">Author 6</div>
+  <div class="affiliation">Affiliation 2</div>
+</div>
+
+<div class="download-info">
+
+This publication is available free of charge from: <br>
+<a href="#">URL</a>
+
+<div class="category">Computer Security</div>
+
+</div>
+
+
+  </div>
+
+  <div class="logo-wrapper">
+
+    <img id="NIST-logo" src="nist-logo.png">
+    <img id="commerce-logo" src="commerce-logo-color.png">
+  </div>
+
+  <div class="logo-info">
+      <p>U.S. Department of Commerce</p>
+      <p><i>Wilbur L. Ross, Jr., Secretary</i></p>
+  </div>
+
+  <div class="logo-info">
+      <p>National Institute of Standards and Technology</p>
+      <p><i>Wilbur L. Ross, Jr., Secretary</i></p>
   </div>
 
   <div class="WordSection11">
@@ -937,9 +1047,9 @@ a.anchorjs-link:hover {
 
 
 </div></header>
-      
+
     </div>
-  
+
     <div class="prefatory-section"><nav>
   <h1 id="content">Contents</h1>
   <div id="toc"></div>
@@ -949,11 +1059,11 @@ a.anchorjs-link:hover {
 
 <div class="rule toc"></div>
 
-      
+
     </div>
-    
+
     <main class="main-section"><button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-      
+
       <div id="_abstract">
         <h1 class="AbstractTitle">Abstract</h1>
         <p id="_6f40a815-a907-4ad9-a2c8-1446ab83a17f">The <a href="http://www.opengeospatial.org/">OGC</a> provides a collaborative, consensus process for developing and approving open, international standards for the geospatial domain. &#x201C;International standards&#x201D;<a rel="footnote" href="#fn:1" epub:type="footnote" id="fnref:1"><sup>1</sup></a> are those adopted by an international standardizing/standards organization and made available to the public. Specifically, an OGC standard is:</p>
@@ -998,16 +1108,16 @@ a.anchorjs-link:hover {
   <p class="AltTerms" style="text-align:left;">BP</p>
 
 <p id="_e536ebcd-cc3a-4831-9d56-a7ae46c3de3c">A document containing discussion of best practices related to the use and/or implementation of an adopted OGC document or related technology and for release to the public. Best Practices Papers are the official position of the OGC and thus represent an endorsement of the content of the paper.</p><h2 class="TermNum" id="_candidate_standard">1.6&#xA0;<p class="Terms" style="text-align:left;">Candidate standard</p></h2>
-  
+
   <p id="_b9d195f3-2d02-4c9a-8699-8d0d884e5c3b">An engineering document that describes an existing, operational standard that one or more OGC Voting TC Members wish to sponsor as an RFC submission under the Bylaws of the OGC.</p>
 <h2 class="TermNum" id="_deprecated_document">1.7&#xA0;<p class="Terms" style="text-align:left;">Deprecated Document</p></h2>
-  
+
   <p id="_367d261b-3e9b-40a6-9238-fe33cac59611">An official standard of the OGC but no longer maintained. An OGC document shall be deprecated by a vote of the OGC Voting Members, usually as part of a standards adoption vote.</p>
 <h2 class="TermNum" id="_engineering_report">1.8&#xA0;<p class="Terms" style="text-align:left;">Engineering Report</p></h2>
   <p class="AltTerms" style="text-align:left;">ER</p>
 
 <p id="_9505f942-620a-431a-8110-4f00d0b84664">An ER Report is a document that reports on some technical activity in an Interoperability Program Initiative. An ER Report may also be a candidate standard or a formal change request proposal for an approved standard. An ER Report documents are submitted to the OGC TC for review and comment. An ER Report is not a publicly available document unless approved for release by the OGC membership. An ER Report does not represent the official position of the OGC nor of the OGC Technical Committee.</p><h2 class="TermNum" id="_invited_guest">1.9&#xA0;<p class="Terms" style="text-align:left;">Invited Guest</p></h2>
-  
+
   <p id="_00e9a4b8-2a84-4847-b55c-7868a87eb676">A liaison representative appointed by an external organization which has reciprocal liaison status with the OGC, or an individual who has received an invitation to attend meetings of the TC. The OGC staff or Voting TC Members may issue invitations. It is the policy of the OGC to freely allow guests and observers, so long as they provide a request to attend to the OGC staff and pay the appropriate meeting fees.</p>
 <h2 class="TermNum" id="_ogc_interoperability_program">1.10&#xA0;<p class="Terms" style="text-align:left;">OGC Interoperability Program</p></h2>
   <p class="AltTerms" style="text-align:left;">IP</p>
@@ -1016,13 +1126,13 @@ a.anchorjs-link:hover {
   <p class="AltTerms" style="text-align:left;">IPR</p>
 
 <p id="_a30e830f-1add-4313-b032-e4fd4ae30513">An umbrella term used to refer to the object of a variety of laws, including patent law, copyright law, trademark law, trade secret law, industrial design law, and potentially others.</p><h2 class="TermNum" id="_issues">1.12&#xA0;<p class="Terms" style="text-align:left;">Issues</p></h2>
-  
+
   <p id="_e41d28e2-9d6a-49ac-a03d-c5f88ec72684">Issues are questions (other than standard adoption questions) that come before the Technical Committee for discussion, resolution and, potentially, final recommendation to the PC.</p>
 <h2 class="TermNum" id="_items">1.13&#xA0;<p class="Terms" style="text-align:left;">Items</p></h2>
-  
+
   <p id="_abfab622-06e1-403a-8f45-1055985dfb52">Items are proposed standard adoption questions that come before the committee for discussion, resolution and, potentially, final recommendation to the PC. Items come about through TC voting membership motions and seconds, typically in response to RFCs, PC directives, and WG recommendations, or the normal course of TC business.</p>
 <h2 class="TermNum" id="_necessary_claims">1.14&#xA0;<p class="Terms" style="text-align:left;">Necessary Claims</p></h2>
-  
+
   <p id="_f330b7ba-b61c-4065-9368-5234b85ec8dc">Those claims of a patent or patent application, throughout the world, excluding design patents and design registrations, owned by a Member or its Related Parties now or at any future time and which would be Necessarily Infringed by implementation of a standard. Notwithstanding the foregoing, Licensed Claims shall not include any claims (i) relating to any enabling technologies that may be necessary to make or use any implementation of a standard but are not themselves expressly set forth in the standard (e.g., semiconductor manufacturing technology, compiler technology, object oriented technology, basic operating system technology, and the like); or (iii) necessary for the implementation of other published standards developed elsewhere and merely referred to in the body of the standard. For purposes of this definition, a standard shall be deemed to include only architectural and interconnection requirements essential for interoperability and shall not include any implementation examples unless such implementation examples are expressly identified as being required for compliance with the standard.</p>
 <h2 class="TermNum" id="_ogc">1.15&#xA0;<p class="Terms" style="text-align:left;">OGC</p></h2>
   <p class="AltTerms" style="text-align:left;">Open Geospatial Consortium</p>
@@ -1031,52 +1141,52 @@ a.anchorjs-link:hover {
   <p class="AltTerms" style="text-align:left;">OAB</p>
 
 <p id="_82713c01-7cda-457a-92e4-e523f6cd1f71">The OGC Architecture Board works with the TC and the PC to insure architecture consistency of the Baseline and provide guidance to the OGC membership to insure strong life cycle management of the OGC standards baseline. The OAB performs review of every standard proposed for adoption by the OGC. The OAB is an entity organized under the Consortium.</p><h2 class="TermNum" id="_ogc_communication">1.17&#xA0;<p class="Terms" style="text-align:left;">OGC Communication</p></h2>
-  
+
   <p id="_50bf1543-44fb-4a62-8b90-2d69211377ec">A communication by any means, including posting on the WWW Site (<a href="http://www.opengeospatial.org">http://www.opengeospatial.org</a>), electronic mail, facsimile transmission, or by regular post. The primary forms of communication will be either via email or using the OGC Members Only Portal. Any member desiring delivery by other than electronic means (WWW site or electronic mail) must state so in written form to OGC staff.</p>
 <h2 class="TermNum" id="_ogc_standard">1.18&#xA0;<p class="Terms" style="text-align:left;">OGC standard</p></h2>
-  
+
   <p id="_c44425bb-447c-40a3-8d83-e3834862c160">A document containing an OGC consensus computing technology dependent standard for application programming interfaces and related standards based on the Abstract Specification or domain-specific extensions to the Abstract Specification provided by domain experts.</p>
 <h2 class="TermNum" id="_ogc_member">1.19&#xA0;<p class="Terms" style="text-align:left;">OGC Member</p></h2>
   <p class="AltTerms" style="text-align:left;">Member</p>
 
 <p id="_519328b5-586d-47fc-8005-3d5eda76ac00">Any member in good standing.</p><h2 class="TermNum" id="_ogc_member_portal">1.20&#xA0;<p class="Terms" style="text-align:left;">OGC Member Portal</p></h2>
-  
+
   <p id="_114f057a-2c37-43b8-ae8c-c16ea232f5b0">A members&#x2019; only accessible component of the OGC web site. The Portal provides a location for storing and accessing all in progress OGC TC and PC documents, all WG agendas, working documents, and presentations, and to perform project management functions, such as tasks, tracking actions, and calendars.</p>
 <h2 class="TermNum" id="_ogc_standards_program">1.21&#xA0;<p class="Terms" style="text-align:left;">OGC Standards Program</p></h2>
-  
+
   <p id="_68afbf74-4c38-40f4-991e-ffb0345d3c6e">Provides an industry consensus process to plan, review and officially adopt OGC Standards for interfaces and protocols that enable interoperable geoprocessing services, data, and applications. The OGC bodies involved in the Standard Program are the Technical Committee, Planning Committee, and Strategic Member Advisory Committee.</p>
 <h2 class="TermNum" id="_profile">1.22&#xA0;<p class="Terms" style="text-align:left;">Profile</p></h2><p id="_2ec47fdc-a9fa-4807-b542-895442c52737">A profile is a strict subset of a standard applicable to multiple Application Schemas. An example of a profile is the GML Simple Feature Profile.</p>
 <p>[SOURCE: <a href="#ISO19109">ISO 19109</a>]</p><h2 class="TermNum" id="_planning_committee">1.23&#xA0;<p class="Terms" style="text-align:left;">Planning Committee</p></h2>
   <p class="AltTerms" style="text-align:left;">PC</p>
 
 <p id="_24f958fb-9261-498c-a460-9f3dedabbad4">The OGC Planning Committee is granted authority to operate by the OGC Bylaws. Principal Membership is available for organizations that wish to participate in the planning and management of the Consortium&#x2019;s technology development process.</p><h2 class="TermNum" id="_rand">1.24&#xA0;<p class="Terms" style="text-align:left;">RAND</p></h2>
-  
+
   <p id="_ea1b4aa3-82d0-4fa1-a0c7-fe094beb1488">Reasonable and Non-discriminatory.</p>
 <h2 class="TermNum" id="_request_for_comment">1.25&#xA0;<p class="Terms" style="text-align:left;">Request for Comment</p></h2>
   <p class="AltTerms" style="text-align:left;">RFC</p>
 
 <p id="_865321c7-f06d-4054-bdee-cf0873eeeab2">(See Section 9.4)</p><p id="_d1807d8d-2b65-4d07-899a-516648020dbc">An explicit request to the industry for comments concerning a particular candidate standard that a Standards Working Group is considering for adoption as a standard satisfying a portion of the Abstract Specification. An RFC begins as an unsolicited proposal from a Voting TC Member or members and results, if successful, in an OGC standard. The RFC process is typically how interface and encoding standards developed in the OGC Interoperability Program move into the formal OGC TC standards approval process.</p>
 <h2 class="TermNum" id="_retired_document">1.26&#xA0;<p class="Terms" style="text-align:left;">Retired Document</p></h2>
-  
+
   <p id="_1b28a5b7-b6e5-45d1-904f-1a05f4b47e33">An OGC document that, by Member approval, is no longer an official or supported document of the OGC. As such, retired documents should not be referenced in any procurement, policy statement, or other OGC document. Retired documents are made available on the OGC website for historical purposes.</p>
 <h2 class="TermNum" id="_strategic_member_advisory_committee">1.27&#xA0;<p class="Terms" style="text-align:left;">Strategic Member Advisory Committee</p></h2>
   <p class="AltTerms" style="text-align:left;">SMAC</p>
 
 <p id="_74995aad-8485-49c8-b0aa-91432a6229bc">The SMAC is granted authority to operate by the OGC by-laws. The SMAC has as a primary responsibility to recommend areas of strategic opportunity for Consortium operations and recommending resource strategies in support of Consortium programs to the Board of Directors, Consortium staff and the Membership.</p><h2 class="TermNum" id="_standards_development_process">1.28&#xA0;<p class="Terms" style="text-align:left;">Standards Development Process</p></h2>
-  
+
   <p id="_82737730-c9bc-478e-bf04-59a40404cc18">The operational details of the discussing and evaluating technologies relevant to the OGC standards baseline, standard revision, and the RFC processes to propose, review, recommend modifications to, and recommend adoption of candidate standards.</p>
 <h2 class="TermNum" id="_standards_baseline">1.29&#xA0;<p class="Terms" style="text-align:left;">Standards Baseline</p></h2>
-  
+
   <p id="_7ab95abc-a51a-4c60-b88d-69682d1fe883">The complete set of member approved abstract specifications standards, including profiles and extensions, and Community standards.</p>
 <h2 class="TermNum" id="_technical_committee">1.30&#xA0;<p class="Terms" style="text-align:left;">Technical Committee</p></h2>
   <p class="AltTerms" style="text-align:left;">TC</p>
 
 <p id="_5c8aaa0b-8b66-4564-a5de-5a785a9eafcb">See Section 5.</p><p id="_c27e2c02-525f-473c-b4a7-86ccffb096f4">The OGC TC has been granted authority to operate by the OGC Bylaws. The OGC Technical Committee is composed of individuals representing organizations that are duly recognized members in good standing of the OGC.</p>
 <h2 class="TermNum" id="_tc_member">1.31&#xA0;<p class="Terms" style="text-align:left;">TC Member</p></h2>
-  
+
   <p id="_5258cf07-c569-4457-9d7f-581912d79427">Any member in good standing of the TC.</p>
 <h2 class="TermNum" id="_voting_tc_member">1.32&#xA0;<p class="Terms" style="text-align:left;">Voting TC Member</p></h2>
-  
+
   <p id="_538ec7fc-a4ec-497b-b80d-cdb78d6e6a3c">Any member of the TC who may vote on TC Items and Issues. Voting TC Members are the Technical Representatives of OGC Technical Committee Members, Principal Members, and Strategic Members. Only the designated Technical Representative from a given member organization may be a Voting TC Member.</p>
 <h2 class="TermNum" id="_white_paper">1.33&#xA0;<p class="Terms" style="text-align:left;">White Paper</p></h2>
   <p class="AltTerms" style="text-align:left;">WP</p>
@@ -1928,7 +2038,7 @@ a.anchorjs-link:hover {
 <p id="_339f1b8b-138c-4c3b-8e59-40ad438cdf76">The policy of the OGC is that proposed standards resulting from an RFC evaluation may be recommended to the PC for acceptance conditional on certain changes to the standard, which the TC deems necessary, within a specified time frame.</p>
 <p id="_9369ba1d-1499-4f8c-aacd-aefd9066b771">Acceptance of the TC recommendation for adoption is always with the caveat that the PC may verify that the standard&#x2019;s sponsor organization(s) is/are in a position to develop (or have developed for the sponsor organization) or commercialize an implementation of the standard. Further, for candidate standards developed external to the OGC and submitted into the OGC process, the PC may verify that the submitting organization has provided a duly executed submission of technology form. In addition, the TC recommends acceptance contingent on the PC&#x2019;s finding that the sponsoring organization(s) makes the technology available as per the OGC Intellectual Property Policies and Procedures.<a rel="footnote" href="#fn:20" epub:type="footnote" id="fnref:20"><sup>20</sup></a></p></div>
         <div id="the-two-track-standards-process-characteristics"><h2>9.2. The Two Track Standards Process: Characteristics</h2><p id="_22fa4335-87e2-4b8f-baf8-be9d3bdef953">There are two possible tracks for proposing and approving candidate standards or proposing and approving revisions to an existing adopted standard: The OGC Community standard and the OGC Full Standards track. These two tracks are described below. Regardless of the submission track, the OGC Request For Comment (RFC) Process shall be used. There are key differences in the RFC process depending on whether the Community or the Full Standard track is being used. The following table summarizes the key aspects and steps in the RFC process for the two tracks.</p>
-<p class="TableTitle" align="center">Table 2</p><table id="_b5f4ac3a-472d-4f29-b81b-9e7172adf360" class="MsoISOTable" border="1" cellspacing="0" cellpadding="0"><tbody><tr><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">SWG</td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Evidence of Implmentation</td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Modular Spec</td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Compliance Test</td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">OGC Template</td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Public Comment</td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">OAB Review</td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">IPR to OGC</td><td align="left" style="border-top:solid windowtext 1.5pt;border-bottom:solid windowtext 1.0pt;">Member Vote</td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Community standard</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">NR*</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Strong</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">NR*</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Partial</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Yes or Shared</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Full Standard Track</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;"></td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">standard</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">No</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">NR*</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.0pt;">Yes</td></tr><tr><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;">standard with Compliance Suite</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;">Yes</td><td align="left" style="border-top:none;border-bottom:solid windowtext 1.5pt;">Yes</td></tr></tbody></table>
+
 <p id="_e0a9aef5-c3bb-4b88-b276-49291c03cdf3">*NR - Not required.</p>
 <p id="_a6d10fd6-5cd2-485f-8e54-71d75843c554">Community standard: This is a document, developed by communities external to the OGC, such as GeoRSS, that OGC members wish to bring into the OGC process. The key consideration for a Community standard submission is that there is very strong evidence of implementation. At the same time, the community owning the standard may not want to allow normative changes (except for errors) to the document, may not wish to follow the OGC Modular Specification Policy, nor do they wish to develop CITE tests. Please visit Section 9.5 and Annex C to read more about the requirements for submitting a Community standard as well as a checklist of steps in the Community standard submission, review, and approval process.</p>
 <p id="_121c7340-c3a1-4b09-b799-70bc5d0c9e6d">Full OGC standards track, which consists of two possible target levels of standard.</p>
@@ -2756,7 +2866,7 @@ a.anchorjs-link:hover {
           'container': 'main', //element to find all selectors in
           'smoothScrolling': true, //enable or disable smooth scrolling on click
           'prefix': 'toc', //prefix for anchor tags and class names
-          'onHighlight': function(el) {}, //called when a new section is highlighted 
+          'onHighlight': function(el) {}, //called when a new section is highlighted
           'highlightOnScroll': true, //add class to heading that is currently in focus
           'highlightOffset': 100, //offset to trigger the next headline
           'anchorName': function(i, heading, prefix) { //custom function for anchor name
@@ -2769,7 +2879,7 @@ a.anchorjs-link:hover {
         return $heading[0].tagName.toLowerCase();
       }
       });
-      
+
   </script>
 
 <script>
@@ -2792,7 +2902,7 @@ $('#toggle').on('click', function(){
 <script>
     // Scroll to top button
     window.onscroll = function() {scrollFunction()};
-    
+
     function scrollFunction() {
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             document.getElementById("myBtn").style.display = "block";
@@ -2800,7 +2910,7 @@ $('#toggle').on('click', function(){
             document.getElementById("myBtn").style.display = "none";
         }
     }
-    
+
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
         document.body.scrollTop = 0;
